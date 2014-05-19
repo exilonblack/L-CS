@@ -35,10 +35,10 @@ parts of the program, to see what error messages you get.
       </tr>
       <tr>
           <td colspan='5'>printf("hello, world!\n");</td>
-          <td colspan='6'>none</td>
+          <td colspan='6'> </td>
       </tr>
       <tr>
-          <td colspan='11'>none</td>
+          <td colspan='11'> </td>
       </tr>
   </table>
 
