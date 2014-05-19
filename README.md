@@ -22,7 +22,8 @@ I decided to write about my experience and it's `kinda my way to express exilonb
   
   README.md => This file
   
-  STATUS.md => Status of this repository and my persona as exilonblack.
-  
   PLAN2014.md => My plans in 2014.
   
+**Repository Status:** On-going
+
+**Programming Rank:** N00b
