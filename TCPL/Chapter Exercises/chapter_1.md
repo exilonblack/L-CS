@@ -129,21 +129,21 @@ parts of the program, to see what error messages you get.
         }
     }
     
-    **Powershell**
+  **Powershell**
       
-      PS <..loc..> cc celsius-0.c
-      PS <..loc..< ./a
-        0    32.0
-       30    86.0
-       60   140.0
-       90   194.0
-      120   248.0
-      150   302.0
-      180   356.0
-      210   410.0
-      240   464.0
-      270   518.0
-      300   572.0
-      PS <..loc..> 
+    PS <..loc..> cc celsius-0.c
+    PS <..loc..< ./a
+      0    32.0
+      30    86.0
+      60   140.0
+      90   194.0
+     120   248.0
+     150   302.0
+     180   356.0
+     210   410.0
+     240   464.0
+     270   518.0
+     300   572.0
+    PS <..loc..> 
       
       
