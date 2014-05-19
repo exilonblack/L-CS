@@ -1,4 +1,4 @@
-L-CS
+L-CS\TCPL\Chapter Notes\chapter_1.md>
 ====
 
 Learning-Computer Science
