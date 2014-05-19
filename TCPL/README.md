@@ -1,7 +1,8 @@
-L-CS
+L-CS\TCPL\>
 ====
 
-Learning-Computer Science
+TCPL: The C Programming Language
+Plan: TCPL: Learn the basics with C (5/19/2014 - PRESENT)
 
 **What's L-CS?**
   
