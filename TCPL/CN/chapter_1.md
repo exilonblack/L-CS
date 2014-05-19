@@ -64,7 +64,7 @@ The C Programming Language Chapter 1 - A Tutorial Introduction
   printf() does not automatically supply newlines so it's necessary to put them everytime...
   
   This is another program that prints "hello, world" in another way.
-  (Refer to [hello-1.c](https://github.com/exilonblack/L-CS/blob/master/TCPL/CP/Chapter%201/hello-1.c))
+  (Refer to [hello-1.c](https://github.com/exilonblack/L-CS/blob/master/TCPL/CP/chapter_1/hello-1.c))
   
     #include <stdio.h>
 
