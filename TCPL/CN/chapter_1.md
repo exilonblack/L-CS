@@ -12,7 +12,8 @@ The C Programming Language Chapter 1 - A Tutorial Introduction
     hello, world
     
   
-  A C program consists of *functions* and *variables*, A function contains *statements* that specify the computing operations to be done, and variables store values used during the computation.
+  A C program consists of *functions* and *variables*, A function contains *statements* that specify the computing 
+  operations to be done, and variables store values used during the computation.
   
   The main() function is a special function where everything begins execution.
 
@@ -46,7 +47,8 @@ The C Programming Language Chapter 1 - A Tutorial Introduction
     </tr>
   </table>
   
-  The names in the parenthesis of a function is called a parameter and "hello, world!\n" in printf() is called an argument.
+  The names in the parenthesis of a function is called a parameter and "hello, world!\n" in printf() is called an 
+  argument.
 
   printf() is a library function that *prints output*. The example of libraries must be 'stdio.h'
   
@@ -61,7 +63,8 @@ The C Programming Language Chapter 1 - A Tutorial Introduction
   
   printf() does not automatically supply newlines so it's necessary to put them everytime...
   
-  This is another program that prints "hello, world" in another way. (Refer to [hello-1.c](https://github.com/exilonblack/L-CS/blob/master/TCPL/CP/Chapter%201/hello-1.c))
+  This is another program that prints "hello, world" in another way.
+  (Refer to [hello-1.c](https://github.com/exilonblack/L-CS/blob/master/TCPL/CP/Chapter%201/hello-1.c))
   
     #include <stdio.h>
 
@@ -79,3 +82,76 @@ The C Programming Language Chapter 1 - A Tutorial Introduction
     hello world
     
     
+**1.2 Variables and Arithmetic Expressions**
+
+  Words around '/**/' are called comments. It's just there to explain briefly a certain code. It's ignored by the 
+  compiler.
+ 
+    /* print Fahrenheit-Celsius table
+     for fahr = 0, 20, ..., 300 */
+ 
+  Comments may be placed anywhere with blanks, tabs, and newlines.
+  
+  In C, variables must be declared before they're used.
+
+  A declaration announces the properties of variables; it consists of a name and a list of variables, such as:
+
+    int fahr, celsius;
+    int lower, upper, step;
+
+  int means integer contrast to float which means floating-point numbers.
+  
+  Computation in the temperature conversion program begins with the assignment statements 
+     
+    lower = 0;
+    upper = 300;
+    step = 20;
+    
+  Each line of the table is computed the same way, so we use a loop that repeats once per output line; this is the 
+  purpose of the while loop 
+    while (fahr <= upper) {
+    ...
+    }
+    
+  The while loop operates as follows: The condition in parentheses is tested. If it is true (fahr is less than or equal 
+  to upper), the body of the loop (the three statements enclosed in braces) is executed.
+  
+  Then the condition is re-tested, and if true, the body is executed again. When the test becomes false (fahr exceeds 
+  upper) the loop ends, and execution continues at the statement at follows the loop.
+  
+  There are no further statements in this program, so it terminates. 
+
+  C does not care about proper indentation and spaces but it's still necessary for a programmer to read.
+  
+  printf(); is not part of C, it's from a library made by the ANSI stardard.
+  
+  Dividing integers like: 5/9 will truncate the decimal points since they're both integers and will only take the whole 
+  number.
+  
+  5.0/9.0 however will be computed to its complete value
+  
+  <table>
+    <tr>
+      <td>%d</td>
+      <td>Print as decimal integer</td>
+    </tr>
+    <tr>
+      <td>%6d</td>
+      <td>Print as decimal integer, at least 6 characters wide</td>
+    </tr>
+    <tr>
+      <td>%f</td>
+      <td>Print as floating point</td>
+    </tr>
+    <tr>
+      <td>%6f</td>
+      <td>Print as floating point, at least 6 characters wide</td>
+    </tr>
+   <tr>
+      <td>%.2f</td>
+      <td>Print as floating point, 2 characters after the decimal point</td>
+   </tr>
+   <tr>
+      <td>%6.2f</td>
+      <td>print as floating point, at least 6 wide and 2 after decimal point</td>
+    </tr>
