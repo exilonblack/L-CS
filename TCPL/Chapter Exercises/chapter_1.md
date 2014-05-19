@@ -37,9 +37,6 @@ parts of the program, to see what error messages you get.
           <td colspan='5'>printf("hello, world!\n");</td>
           <td colspan='6'> </td>
       </tr>
-      <tr>
-          <td colspan='11'> </td>
-      </tr>
   </table>
 
 ***Exercise 1-2.*** Experiment to find out what happens when prints's argument string contains
