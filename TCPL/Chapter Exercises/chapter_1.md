@@ -1,28 +1,48 @@
-L-CS
+PS L-CS\TCPL\Chapter Exercises\chapter_1.md>
 ====
 
-Learning-Computer Science
+The C Programming Language Problem Set 1
 
-**What's L-CS?**
-  
-L-CS is an acronym for Learning-Computer Science. I added a hyphen to separate 'Learning' and 'Computer Science'. It's a personal repository containing exercise solutions, programs, my notes and reflections for each chapter on books, video tutorials, online courses, etc.,.
-  
-**Why make L-CS?**
+***Exercise 1.1.*** Run the ``hello, world'' program on your system. Experiment with leaving out
+parts of the program, to see what error messages you get. 
 
-I decided to write about my experience and it's `kinda my way to express exilonblack's (my alias) persona.
-
-**Do you have a plan to learn Computer Science?**
-
-  Yes. I plan to start from the very beginning, from relatively easy to increasingly difficult path. I think I'll add a 'Programming rank' for this. You'll see the whole plan in the plan section. (Specifically PLAN2014.md for the beginning)
+  <p align='center'>Syntax table of hello.c</p>
   
-**Do you got some sort of design/template for the contents?**
-  (5/9/14) Not yet... But I'll make some as time progresses.
-  
-**Folders and files**
-  
-  README.md => This file
-  
-  STATUS.md => Status of this repository and my persona as exilonblack.
-  
-  PLAN2014.md => My plans in 2014.
-  
+  <table>
+   <tr>
+          <td colspan='3'>Code</td>
+          <td colspan='3'>Error</td>
+          <td colspan='3'>Description</td>
+          <td colspan='3'>Code Line</td>
+      </tr>
+      <tr>
+          <td colspan='4'>#include <"stdio.h"></td>
+          <td colspan='2'>warning</td>
+          <td colspan='2'>Incompatible implicit declaration of built-in function 'printf'</td>
+          <td>hello.c:4:5</td>
+      </tr>
+      <tr>
+          <td colspan='3'>main()</td>
+          <td colspan='1'>error</td>
+          <td>defines a function called main</td>
+          <td>hello.c:3:1</td>
+      </tr>
+      <tr>
+          <td colspan='3'>{}</td>
+          <td colspan='1'>error</td>
+          <td>statements of main are enclosed in braces</td>
+          <td>hello.c:4:1, hello.c:6:1</td>
+      </tr>
+      <tr>
+          <td colspan='4'>printf("hello, world!\n");</td>
+          <td colspan='1'>none</td>
+          <td>none</td>
+          <td>none</td>
+      </tr>
+      <tr>
+          <td colspan='0'></td>
+          <td colspan='0'>none</td>
+          <td>none</td>
+          <td>none</td>
+      </tr>
+  </table>
