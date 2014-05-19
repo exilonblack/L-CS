@@ -2,7 +2,7 @@ L-CS 2014 Plans
 ====
 
 You'll see the log/updates in the folder of the missions.
-**TCPL Plan: Learning the programming fundamentals with C (5/19/14)**
+**TCPL Plan: Learn the basics with C (5/19/14)**
 
   The C Programming Language is a book that teaches C made by Dennis Ritchie and Brian Kerningham. I plan to learn all of the programming fundamentals in this book since C is mostly faster and straight to the point.
   
