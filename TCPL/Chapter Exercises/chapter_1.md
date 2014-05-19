@@ -1,4 +1,4 @@
-PS L-CS\TCPL\Chapter Exercises\chapter_1.md>
+PS L-CS\TCPL\ChapterExercises\chapter_1.md>
 ====
 
 The C Programming Language Problem Set 1
