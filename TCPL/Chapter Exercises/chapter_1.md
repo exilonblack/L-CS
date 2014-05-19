@@ -38,10 +38,7 @@ parts of the program, to see what error messages you get.
           <td colspan='6'>none</td>
       </tr>
       <tr>
-          <td colspan='2'>none</td>
-          <td colspan='4'>none</td>
-          <td colspan='2'>none</td>
-          <td colspan='4'>none</td>
+          <td colspan='11'>none</td>
       </tr>
   </table>
 
