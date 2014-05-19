@@ -60,10 +60,7 @@ parts of the program, to see what error messages you get.
     PS <..loc..> 
 
   '\c' character notation doesn't exist so it gave ne an error.
-<<<<<<< HEAD:TCPL/CE/chapter_1.md
->>>>>>> 1b369e746a5bea585efd3bf19c92933f5ba2665a
-=======
-
+  
 ***Exercise 1-3.*** Modify the temperature conversion program to print a heading above the table.
 
   **Code**
@@ -149,5 +146,3 @@ parts of the program, to see what error messages you get.
      300   572.0
     PS <..loc..> 
       
-      
->>>>>>> 5d024d43c226d49086ef8eee1dfcdad198710058:TCPL/Chapter Exercises/chapter_1.md
