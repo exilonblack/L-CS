@@ -60,3 +60,90 @@ parts of the program, to see what error messages you get.
     PS <..loc..> 
 
   '\c' character notation doesn't exist so it gave ne an error.
+
+***Exercise 1-3.*** Modify the temperature conversion program to print a heading above the table.
+
+  **Code**
+  
+    #include <stdio.h>
+
+    /* print Fahrenheit-Celsius table
+        for fahr = 0, 20, ..., 300; floating-point version */
+    main()
+    {
+        float fahr, celsius;
+        float lower, upper, step;
+        
+        lower = 0;      /* lower limit of temperature */
+        upper = 300;    /* upper limit */
+        step = 30;      /* step size */
+        
+        fahr = lower;
+        while (fahr <= upper) {
+            celsius = (5.0/9.0) * (fahr-32.0);
+            printf("%3.0f %6.1f\n", fahr, celsius);
+            fahr = fahr + step;
+        }
+    }
+
+  **Powershell**
+    
+    PS <..loc..> cc fahr-2.c
+    PS <..loc..> ./a
+            Fahrenheit to Celsius
+               |   0 | -17.8 |
+               |  30 |  -1.1 |
+               |  60 |  15.6 |
+               |  90 |  32.2 |
+               | 120 |  48.9 |
+               | 150 |  65.6 |
+               | 180 |  82.2 |
+               | 210 |  98.9 |
+               | 240 | 115.6 |
+               | 270 | 132.2 |
+               | 300 | 148.9 |
+    PS <..loc..>
+    
+***Exercise 1-4.*** Write a program to print the corresponding Celsius to Fahrenheit table. 
+
+  **Code**
+  
+    #include <stdio.h>
+
+    /* print Celsius-Fahrenheit table
+        for celsius = 0, 20, ..., 300; floating-point version */
+    main()
+    {
+        float celsius, fahr;
+        float lower, upper, step;
+        
+        lower = 0;      /* lower limit of temperature */
+        upper = 300;    /* upper limit */
+        step = 30;      /* step size */
+        
+        celsius = lower;
+        while (celsius <= upper) {
+            fahr = celsius * (9.0/5.0) + 32.0;
+            printf("%3.0f %6.1f\n", celsius, fahr);
+            celsius = celsius + step;
+        }
+    }
+    
+    **Powershell**
+      
+      PS <..loc..> cc celsius-0.c
+      PS <..loc..< ./a
+        0    32.0
+       30    86.0
+       60   140.0
+       90   194.0
+      120   248.0
+      150   302.0
+      180   356.0
+      210   410.0
+      240   464.0
+      270   518.0
+      300   572.0
+      PS <..loc..> 
+      
+      
