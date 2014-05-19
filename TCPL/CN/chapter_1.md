@@ -130,6 +130,7 @@ The C Programming Language Chapter 1 - A Tutorial Introduction
   
   5.0/9.0 however will be computed to its complete value
   
+  **<p align='center'>Table of Character notations for %d and %f</p>**
   <table>
     <tr>
       <td>%d</td>
