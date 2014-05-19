@@ -1,28 +1,17 @@
 L-CS\TCPL\Chapter Notes\chapter_1.md>
 ====
 
-Learning-Computer Science
+The C Programming Language Chapter 1 - A Tutorial Introduction
 
-**What's L-CS?**
-  
-L-CS is an acronym for Learning-Computer Science. I added a hyphen to separate 'Learning' and 'Computer Science'. It's a personal repository containing exercise solutions, programs, my notes and reflections for each chapter on books, video tutorials, online courses, etc.,.
-  
-**Why make L-CS?**
+**1.1 Getting Started**
 
-I decided to write about my experience and it's `kinda my way to express exilonblack's (my alias) persona.
-
-**Do you have a plan to learn Computer Science?**
-
-  Yes. I plan to start from the very beginning, from relatively easy to increasingly difficult path. I think I'll add a 'Programming rank' for this. You'll see the whole plan in the plan section. (Specifically PLAN2014.md for the beginning)
+  Inside Powershell:
   
-**Do you got some sort of design/template for the contents?**
-  (5/9/14) Not yet... But I'll make some as time progresses.
+    $ cc hello.c
+    $ ./a
+    
+  A C program consists of *functions* and *variables*, A function contains *statements* that specify the computing operations to be done, and variables store values used during the computation.
   
-**Folders and files**
+  The main() function is a special function where everything begins execution.
   
-  README.md => This file
-  
-  STATUS.md => Status of this repository and my persona as exilonblack.
-  
-  PLAN2014.md => My plans in 2014.
-  
+  <font color="brown">#include <"stdio.h"></font>
