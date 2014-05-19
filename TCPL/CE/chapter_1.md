@@ -1,7 +1,5 @@
-PS L-CS\TCPL\CN\> more chapter_1.md
+PS L-CS\TCPL\CE\> more chapter_1.md
 ===
-The C Programming Language Chapter 1 - A Tutorial Introduction
-=======
 
 The C Programming Language Problem Set 1
 
