@@ -8,9 +8,11 @@ Plan: TCPL: Learn the basics with C (5/19/2014 - PRESENT)
   
   README.md => This file
   
-  Chapter Notes => My notes and reflections for each chapters.
+  C.pdf => The C Programming Language ebook.
   
-  Chapter Exercises => My solutions for each chapters.
+  CN => My notes and reflections for each chapters.
   
-  Chapter Programs => The programs I wrote based on the book.
+  CE => My solutions for each chapters.
+  
+  CP => The programs I wrote based on the book.
   
