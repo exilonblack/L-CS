@@ -176,4 +176,22 @@ The C Programming Language Chapter 1 - A Tutorial Introduction
   in which the initialization and increment are single statements and logically related, since it is more compact than 
   while and it keeps the loop control statements together in one place. 
 
+**1.4 Symbolic Constants**
+
+  #define line defines a symbolic name or symbolic constant to be a particular string of characters: 
+   
+    #define name replacement list
+  
+  The quantities LOWER, UPPER and STEP are symbolic constants, not variables, so they do not appear in declarations.    
+  Symbolic constant names are conventionally written in upper case so they can ber readily distinguished from lower case 
+  variable names.
+  
+  Notice that there is no semicolon at the end of a #define line.
+
+  I asked a question in [stackoverflow](http://stackoverflow.com/questions/23749559/why-isnt-there-a-semicolon-on-define)
+  and two people Hans Passant and Yu Hao said that `#define` is a preprocessor directive which is interpreted and
+  doesn't need a semicolon. It seems that semicolons are required for statements only.
+  
+  The relational `!=` operator means "not equal to".
+  
   
