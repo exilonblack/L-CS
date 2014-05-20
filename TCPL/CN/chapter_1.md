@@ -214,3 +214,16 @@ The C Programming Language Chapter 1 - A Tutorial Introduction
   The double equals sign `==` is the C notation for ``is equal to''
   
   
+  `||` means OR and `\t` means Tab
+  
+    if (expression)
+      statement1
+    else
+      statement2
+
+  One and only one of the two statements associated with an if-else is performed. If the
+  expression is true, statement1 is executed; if not, statement2 is executed. Each statement can be
+  a single statement or several in braces. In the word count program, the one after the else is an
+  if that controls two statements in braces. 
+
+
