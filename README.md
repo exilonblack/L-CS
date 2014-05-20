@@ -13,17 +13,20 @@ I decided to write about my experience and it's `kinda my way to express exilonb
 
 **Do you have a plan to learn Computer Science?**
 
-  Yes. I plan to start from the very beginning, from relatively easy to increasingly difficult path. I think I'll add a 'Programming rank' for this. You'll see the whole plan in the plan section. (Specifically PLAN2014.md for the beginning)
+  Nope. I just read ebooks, post my reflections, notes, and programs and my exercise solutions. At a later time, I'll make
+  a user site for all of this soon...
   
 **Do you got some sort of design/template for the contents?**
-  (5/9/14) Not yet... But I'll make some as time progresses.
+  Not yet... But I'll make some as time progresses. (5/9/14)
   
+**Do you have any assumptions the readers *might* know?**
+  A knowledge of what they're going to read since the contents are my reflections, notes, programs, and exercise solutions.
+  
+  Powershell is recommended since you'll see prompts, commands, and file locations but it's not necessary, you may ignore it
+  since it's just for show.
+
 **Folders and files**
   
   README.md => This file
-  
-  PLAN2014.md => My plans in 2014.
-  
-**Repository Status:** On-going
 
-**Programming Rank:** N00b
+  TCPL => The C Programming Language (On-going 5/19/14 - PRESENT)
