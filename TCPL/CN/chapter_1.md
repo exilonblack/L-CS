@@ -156,3 +156,24 @@ The C Programming Language Chapter 1 - A Tutorial Introduction
       <td>%6.2f</td>
       <td>print as floating point, at least 6 wide and 2 after decimal point</td>
     </tr>
+
+**1.3 The for statement**
+
+  The for loop three parts:
+  
+    for(initialization; conditional; step) {
+      code goes here...
+    }
+  
+  Initialization is done once, before the loop proper is entered.
+  
+  Conditional is the second part of the for-loop which controls the loop.
+  
+  Step is executed and re-evaluates the conditional. If the condition is true, the loop will run otherwise, it 
+  terminates.
+  
+  The choice between while and for is arbitrary, based on which seems clearer. The for is usually appropriate for loops
+  in which the initialization and increment are single statements and logically related, since it is more compact than 
+  while and it keeps the loop control statements together in one place. 
+
+  
