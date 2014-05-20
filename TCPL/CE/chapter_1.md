@@ -42,7 +42,7 @@ parts of the program, to see what error messages you get.
 ***Exercise 1-2.*** Experiment to find out what happens when prints's argument string contains
 \c, where c is some character not listed above. 
 
-   Refer to hello-2.c in PS <..loc..> dir TCPL\CP\chapter_1
+   Refer to hello-2.c
    
   **Code**
   
@@ -65,7 +65,7 @@ parts of the program, to see what error messages you get.
   
 ***Exercise 1-3.*** Modify the temperature conversion program to print a heading above the table.
 
-  Refer to fahr-2.c in PS <..loc..> dir TCPL\CP\chapter_1
+  Refer to fahr-2.c
   
   **Code**
   
@@ -110,7 +110,7 @@ parts of the program, to see what error messages you get.
     
 ***Exercise 1-4.*** Write a program to print the corresponding Celsius to Fahrenheit table. 
 
-  Refer to celsius-09.c in PS <..loc..> dir TCPL\CP\chapter_1
+  Refer to celsius-09.c
   
   **Code**
   
@@ -195,7 +195,7 @@ that is, from 300 degrees to 0.
     
 ***Exercise 1-6. Verify that the expression getchar() != EOF is 0 or 1.***
 
-  Refer to getchar-0.c in PS <..loc..> dir TCPL\CP\chapter_1
+  Refer to getchar-0.c
   
     #include <stdio.h>
 
@@ -205,11 +205,11 @@ that is, from 300 degrees to 0.
         printf("%d\n", getchar() != EOF);
     }
     
-    Any input will print 1, CTRL + C will print 0
+    Any input will print 1; ^Z and CTRL + C will print 0
     
 ***Exercise 1-7.*** Write a program to print the value of EOF. 
   
-  Refer to EOF-0.c in PS <..loc..> dir TCPL\CP\chapter_1
+  Refer to EOF-0.c
   
   **Code**
   
@@ -227,4 +227,64 @@ that is, from 300 degrees to 0.
     -1
     PS <..loc..>
     
+***Exercise 1-8.*** Write a program to count blanks, tabs, and newlines.
+  
+  Refer to symbol_count-0.c
+  **Code**
+    #include <stdio.h>
+  
+    /* Exercise 1-8. Write a program to count blanks, tabs, and newlines. */
+    main()
+    {
+        int c, nb, nt, nl;
+        
+        nl = nt = nb = 0;
+        while ((c = getchar()) != EOF) {
+            if (c == '\n')
+                ++nl;
+            if (c == '\t')
+                ++nt;
+            if (c == ' ')
+                ++nb;
+        }
+        
+        printf("Blanks: %d\n", nb);
+        printf("Tabs: %d\n", nt);
+        printf("Newlines: %d\n", nl);
+    }
+  
+  **Powershell**
+    PS <..loc..> cc symbol_count-0.c
+    PS <..loc..< ./a
+    EXILON BLACK
+    CAKE    FOOD    CAKE
+    ^Z
+    Blanks: 1
+    Tabs: 2
+    Newlines: 2
     
+***Exercise 1-9.*** Write a program to copy its input to its output, replacing each string of one or more blanks by a 
+single blank. 
+
+  I'll comeback to this at a later time, I don't know how to solve this yet.
+
+***Exercise 1-10.*** Write a program to copy its input to its output, replacing each tab by \t, each
+backspace by \b, and each backslash by \\. This makes tabs and backspaces visible in an
+unambiguous way.
+
+  **Code**
+    #include <stdio.h>
+
+    /* Exercise 1-10. Write a program to copy its input to its output, replacing each tab by \t, each
+    backspace by \b, and each backslash by \\. This makes tabs and backspaces visible in an unambiguous way. */
+    main(){
+        int c;
+        
+        while ((c = getchar()) != EOF) {
+            if (c == '\t' || c == '\b')
+                putchar('\\');
+            putchar(c);
+        }
+    }
+
+  The program won't test '\b'.
