@@ -194,4 +194,23 @@ The C Programming Language Chapter 1 - A Tutorial Introduction
   
   The relational `!=` operator means "not equal to".
   
+**1.5 Character Input and Output**
+
+  presents a new operator, ++, which means increment by one. You could instead write nc = nc
+  + 1 but ++nc is more concise and often more efficient. There is a corresponding operator -- to
+  decrement by 1. The operators ++ and -- can be either prefix operators (++nc) or postfix
+  operators (nc++); these two forms have different values in expressions, as will be shown in
+  Chapter 2, but ++nc and nc++ both increment nc.
+
+  The body of this for loop is empty, because all the work is done in the test and increment parts. But the grammatical 
+  rules of C require that a for statement have a body.
+  
+  The isolated semicolon, called a null statement, is there to satisfy that requirement. We put it on a separate
+  line to make it visible. 
+
+  The `if` statement tests the parenthesized condition, and if the condition is true, executes the statement (or group of
+  statements in braces) that follows.
+  
+  The double equals sign `==` is the C notation for ``is equal to''
+  
   
