@@ -193,4 +193,38 @@ that is, from 300 degrees to 0.
       0  -17.8
     PS <..loc..>
     
+***Exercise 1-6. Verify that the expression getchar() != EOF is 0 or 1.***
+
+  Refer to getchar-0.c in PS <..loc..> dir TCPL\CP\chapter_1
   
+    #include <stdio.h>
+
+    /* Exercise 1-6. Verify that the expression getchar() != EOF is 0 or 1. */
+    main()
+    {
+        printf("%d\n", getchar() != EOF);
+    }
+    
+    Any input will print 1, CTRL + C will print 0
+    
+***Exercise 1-7.*** Write a program to print the value of EOF. 
+  
+  Refer to EOF-0.c in PS <..loc..> dir TCPL\CP\chapter_1
+  
+  **Code**
+  
+    #include <stdio.h>
+  
+    /* Exercise 1-6. Verify that the expression getchar() != EOF is 0 or 1. */
+    main()
+    {
+        printf("%d\n", EOF);
+    }  
+    
+  **Powershell**
+    PS <..loc..> cc EOF-0.c
+    PS <..loc..> ./a
+    -1
+    PS <..loc..>
+    
+    
