@@ -288,3 +288,18 @@ unambiguous way.
     }
 
   The program won't test '\b'.
+
+***Exercise 1-11.*** How would you test the word count program? What kinds of input are most
+likely to uncover bugs if there are any? 
+
+  Refer to word_count-0.c
+  
+  This program counts all ASCII characters except the newline character and the spaces. It counts numbers, symbols, and 
+  even words that doesn't exist.
+  
+***Exercise 1-12.*** Write a program that prints its input one word per line. 
+
+  I'll comeback to this at a later time, I don't know how to solve this yet.
+  
+
+  
