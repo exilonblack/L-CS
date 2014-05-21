@@ -226,4 +226,121 @@ The C Programming Language Chapter 1 - A Tutorial Introduction
   a single statement or several in braces. In the word count program, the one after the else is an
   if that controls two statements in braces. 
 
+**1.6 Arrays**
 
+  The declaration 
+  
+    int ndigit[10];
+  
+  declares ndigit to be an array of 10 integers. Array subscripts always start at zero in C, so the elements are 
+  `ndigit[0], ndigit[1], ..., ndigit[9]`.
+  
+  This is reflected in the for loops that initialize and print the array. 
+
+  A subscript can be any integer expression, which includes integer variables like i, and integer constants. 
+
+  This particular program relies on the properties of the character representation of the digits.
+  
+  For example, the test 
+  
+     if (c >= '0' && c <= '9')
+  
+  determines whether the character in c is a digit. If it is, the numeric value of that digit is 
+  
+   c - '0'
+  
+  This works only if '0', '1', ..., '9' have consecutive increasing values. Fortunately, this
+  is true for all character sets. 
+  
+  By definition, chars are just small integers, so char variables and constants are identical to
+  ints in arithmetic expressions.
+  
+  This is natural and convenient; for example c-'0' is an integer expression with a value between 0 and 9 corresponding 
+  to the character '0' to '9' stored in c, and thus a valid subscript for the array ndigit. 
+
+  As a matter of style, it is advisable to format this construction as we have shown; if each `if` were indented past 
+  the previous else, a long sequence of decisions would march off the right side of the page. 
+
+**1.7 Functions**
+  
+  A function provides a convenient way to encapsulate some computation, which can then be used without worrying about
+  its implementation.
+  
+  With properly designed functions, it is possible to ignore how a job is done; knowing what is done 
+  is sufficient.
+  
+  A function definition has this form: 
+    return-type function-name(parameter declarations, if any)
+    {
+     declarations
+     statements
+    }
+  
+  Function definitions can appear in any order, and in one source file or several, although no function can be split 
+  between files.
+  
+  If the source program appears in several files, you may have to say more to compile and load it than if it all appears 
+  in one, but that is an operating system matter, not a language attribute. 
+  
+  For the moment, we will assume that both functions are in the same file, so whatever you have learned about running C 
+  programs will still work. 
+
+  The first line of power itself, 
+  
+   int power(int base, int n)
+  
+  declares the parameter types and names, and the type of the result that the function returns.
+  
+  The names used by power for its parameters are local to power, and are not visible to any other function: other 
+  routines can use the same names without conflict. 
+  
+  This is also true of the variables i and p: the i in power is unrelated to the i in main. 
+
+  We will generally use parameter for a variable named in the parenthesized list in a function.
+
+  The terms formal argument and actual argument are sometimes used for the same distinction. 
+  The value that power computes is returned to main by the return: statement.
+  
+  Any expression may follow return: 
+   
+   return expression;
+  
+  A function need not return a value; a return statement with no expression causes control, but no useful value, to be 
+  returned to the caller, as does ``falling off the end'' of a function by reaching the terminating right brace.
+  
+  And the calling function can ignore a value returned by a function. 
+
+**1.8 Arguments - Call by Value**
+  
+  Call by value is an asset, however, not a liability.
+  
+  It usually leads to more compact programs with fewer extraneous  variables, because parameters can be treated as 
+  conveniently initialized local variables in the called routine.
+  
+  For example, here is a version of power that makes use of this property. 
+
+**1.9 Character Arrays**
+  
+  I define arrays to be the collection of *something* it's either collection of `characters`, `numbers`, etc...
+  
+  Some functions return a useful value; others, like copy, are used only for their effect and return no value. 
+  
+  The return type of copy is void, which states explicitly that no value is returned. 
+  
+  `getline` puts the character '\0' (the null character, whose value is zero) at the end of the
+  array it is creating, to mark the end of the string of characters.
+
+  The %s format specification in printf expects the corresponding argument to be a string represented in this form.
+  
+  `copy` also relies on the fact that its input argument is terminated with a '\0', and copies this character into the 
+  output. 
+  
+  It is worth mentioning in passing that even a program as small as this one presents some sticky design problems.
+  
+  For example, what should main do if it encounters a line which is bigger than its limit? getline works safely, in that 
+  it stops collecting when the array is full, even if no newline has been seen. By testing the length and the last 
+  character returned, main can determine whether the line was too long, and then cope as it wishes.
+  
+  In the interests of brevity, we have ignored this issue. 
+
+  
