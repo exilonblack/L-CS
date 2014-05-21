@@ -1,4 +1,4 @@
-PS L-CS\TCPL\CN\chapter_1.md>
+PS L-CS\TCPL\CN\> more chapter_1.md
 ====
 
 The C Programming Language Chapter 1 - A Tutorial Introduction
@@ -64,7 +64,7 @@ The C Programming Language Chapter 1 - A Tutorial Introduction
   printf() does not automatically supply newlines so it's necessary to put them everytime...
   
   This is another program that prints "hello, world" in another way.
-  (Refer to [hello-1.c](https://github.com/exilonblack/L-CS/blob/master/TCPL/CP/Chapter%201/hello-1.c))
+  (Refer to [hello-1.c](https://github.com/exilonblack/L-CS/blob/master/TCPL/CP/chapter_1/hello-1.c))
   
     #include <stdio.h>
 
@@ -130,6 +130,7 @@ The C Programming Language Chapter 1 - A Tutorial Introduction
   
   5.0/9.0 however will be computed to its complete value
   
+  **<p align='center'>Table of Character notations for %d and %f</p>**
   <table>
     <tr>
       <td>%d</td>
@@ -155,3 +156,74 @@ The C Programming Language Chapter 1 - A Tutorial Introduction
       <td>%6.2f</td>
       <td>print as floating point, at least 6 wide and 2 after decimal point</td>
     </tr>
+
+**1.3 The for statement**
+
+  The for loop three parts:
+  
+    for(initialization; conditional; step) {
+      code goes here...
+    }
+  
+  Initialization is done once, before the loop proper is entered.
+  
+  Conditional is the second part of the for-loop which controls the loop.
+  
+  Step is executed and re-evaluates the conditional. If the condition is true, the loop will run otherwise, it 
+  terminates.
+  
+  The choice between while and for is arbitrary, based on which seems clearer. The for is usually appropriate for loops
+  in which the initialization and increment are single statements and logically related, since it is more compact than 
+  while and it keeps the loop control statements together in one place. 
+
+**1.4 Symbolic Constants**
+
+  #define line defines a symbolic name or symbolic constant to be a particular string of characters: 
+   
+    #define name replacement list
+  
+  The quantities LOWER, UPPER and STEP are symbolic constants, not variables, so they do not appear in declarations.    
+  Symbolic constant names are conventionally written in upper case so they can ber readily distinguished from lower case 
+  variable names.
+  
+  Notice that there is no semicolon at the end of a #define line.
+
+  I asked a question in [stackoverflow](http://stackoverflow.com/questions/23749559/why-isnt-there-a-semicolon-on-define)
+  and two people Hans Passant and Yu Hao said that `#define` is a preprocessor directive which is interpreted and
+  doesn't need a semicolon. It seems that semicolons are required for statements only.
+  
+  The relational `!=` operator means "not equal to".
+  
+**1.5 Character Input and Output**
+
+  presents a new operator, ++, which means increment by one. You could instead write nc = nc
+  + 1 but ++nc is more concise and often more efficient. There is a corresponding operator -- to
+  decrement by 1. The operators ++ and -- can be either prefix operators (++nc) or postfix
+  operators (nc++); these two forms have different values in expressions, as will be shown in
+  Chapter 2, but ++nc and nc++ both increment nc.
+
+  The body of this for loop is empty, because all the work is done in the test and increment parts. But the grammatical 
+  rules of C require that a for statement have a body.
+  
+  The isolated semicolon, called a null statement, is there to satisfy that requirement. We put it on a separate
+  line to make it visible. 
+
+  The `if` statement tests the parenthesized condition, and if the condition is true, executes the statement (or group of
+  statements in braces) that follows.
+  
+  The double equals sign `==` is the C notation for ``is equal to''
+  
+  
+  `||` means OR and `\t` means Tab
+  
+    if (expression)
+      statement1
+    else
+      statement2
+
+  One and only one of the two statements associated with an if-else is performed. If the
+  expression is true, statement1 is executed; if not, statement2 is executed. Each statement can be
+  a single statement or several in braces. In the word count program, the one after the else is an
+  if that controls two statements in braces. 
+
+
