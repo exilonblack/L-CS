@@ -1,4 +1,4 @@
-PS L-CS\TCPL\C1\> more chapter_1.md
+PS L-CS\TCPL\C1\> more CN1.md
 ====
 
 The C Programming Language Chapter 1 - A Tutorial Introduction
